@@ -1,0 +1,51 @@
+{
+  "paper_model_id": "MD-DySTGCN-CA",
+  "implementation_exp": "p0",
+  "canonical_run": "outputs/model_runs_tf/p0_h1",
+  "protocol": "horizon-1",
+  "architecture": {
+    "water_tower": "ChannelIndepTemporalTower",
+    "meteorology_tower": "TemporalTower",
+    "dynamic_graph": "DynamicAdjacency",
+    "spatial_encoder": "two parameter-independent DynGCN branches",
+    "fusion": "GatedFusion",
+    "decoder": "HorizonCrossAttnDecoder",
+    "output": "last-observation residual prediction"
+  },
+  "test_metrics": {
+    "MAE": 0.1634890878088895,
+    "RMSE": 0.2958893881824861,
+    "MAPE_percent": 5.7676529523459426
+  },
+  "per_channel_rmse": {
+    "WT": 0.0259,
+    "pH": 0.1127,
+    "DO": 0.147,
+    "COD_MN": 0.3582,
+    "NH3_N": 0.4182,
+    "TP": 0.2435,
+    "TN": 0.3441,
+    "EC": 0.1246,
+    "TURB": 0.5065
+  },
+  "training": {
+    "seed": 42,
+    "best_epoch": 23,
+    "best_val_rmse": 0.26728481200688914,
+    "parameter_count": 1853258
+  },
+  "source_files": {
+    "implementation": "train_tf.py",
+    "metrics": "outputs/model_runs_tf/p0_h1/test_metrics.json",
+    "history": "outputs/model_runs_tf/p0_h1/history.json",
+    "checkpoint": "outputs/model_runs_tf/p0_h1/best.pt",
+    "attention_image": "outputs/model_runs_tf/p0_h1/attn_zongguan.png",
+    "prediction": "论文插图包/data/runs/p0/pred_zongguan.npy",
+    "target": "论文插图包/data/runs/p0/true_zongguan.npy"
+  },
+  "excluded_as_primary": {
+    "outputs/model_runs_tf/p0": "legacy 12-step run",
+    "outputs/model_runs_tf/p0_patch_h1": "PatchTST water-tower ablation (MD-DySTFormer)",
+    "outputs/model_runs_tf/p0_e50": "supplementary fixed-epoch trajectory only"
+  }
+}

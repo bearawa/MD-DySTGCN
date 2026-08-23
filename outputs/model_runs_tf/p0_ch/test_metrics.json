@@ -1,0 +1,99 @@
+{
+  "exp": "p0_ch",
+  "horizon_12": {
+    "MAE": 0.2708126687001832,
+    "MSE": 0.186918732567416,
+    "RMSE": 0.43234099107928226,
+    "MAPE": 8.32620980483754,
+    "persistence": {
+      "MAE": 0.2756122902110206,
+      "RMSE": 0.467825115843832,
+      "MAPE": 8.832144892609069
+    },
+    "per_channel_rmse": {
+      "WT": 0.0857,
+      "pH": 0.2453,
+      "DO": 0.3401,
+      "COD_MN": 0.5139,
+      "NH3_N": 0.4056,
+      "TP": 0.4291,
+      "TN": 0.4161,
+      "EC": 0.3713,
+      "TURB": 0.7585
+    }
+  },
+  "horizon_1": {
+    "MAE": 0.2129303952224102,
+    "MSE": 0.11776296786494389,
+    "RMSE": 0.3431660936994561,
+    "MAPE": 6.996397490919608,
+    "persistence": {
+      "MAE": 0.17664687570406007,
+      "RMSE": 0.3337395621196838,
+      "MAPE": 6.410589502773194
+    },
+    "per_channel_rmse": {
+      "WT": 0.0583,
+      "pH": 0.1735,
+      "DO": 0.2048,
+      "COD_MN": 0.3716,
+      "NH3_N": 0.3951,
+      "TP": 0.3279,
+      "TN": 0.3404,
+      "EC": 0.1633,
+      "TURB": 0.6634
+    }
+  },
+  "paper_ref_rmse": 0.2649,
+  "paper_ref_mape_pct": 7.67,
+  "best_epoch": 14,
+  "best_val_rmse": 0.4306390109308902,
+  "n_params": 1856074,
+  "cfg": {
+    "T_in": 168,
+    "T_out": 12,
+    "N": 16,
+    "C": 9,
+    "D": 4,
+    "F": 128,
+    "d_E": 64,
+    "mlp_hidden": 128,
+    "L_tcn": 6,
+    "K_tcn": 3,
+    "L_g": 4,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "huber_delta": 1.0,
+    "epochs": 60,
+    "patience": 15,
+    "zongguan_idx": 15,
+    "num_workers": 4,
+    "use_amp": true,
+    "use_cosine": true,
+    "seed": 42,
+    "zongguan_loss_weight": 4.0,
+    "residual": true,
+    "use_cross_attn": true,
+    "use_future_meteo": false,
+    "use_patchtst_water": false,
+    "n_heads": 4,
+    "n_dec_layers": 2,
+    "patch_len": 8,
+    "patch_layers": 2,
+    "patch_dropout": 0.15,
+    "channel_loss_weight": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      2.5
+    ],
+    "exp": "p0_ch"
+  }
+}

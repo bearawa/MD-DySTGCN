@@ -1,0 +1,89 @@
+{
+  "exp": "p0",
+  "horizon_12": {
+    "MAE": 0.2687295385727769,
+    "MSE": 0.18645043591552674,
+    "RMSE": 0.43179906891461306,
+    "MAPE": 8.40945985259499,
+    "persistence": {
+      "MAE": 0.2756122902110206,
+      "RMSE": 0.467825115843832,
+      "MAPE": 8.832144892609069
+    },
+    "per_channel_rmse": {
+      "WT": 0.0738,
+      "pH": 0.2343,
+      "DO": 0.3291,
+      "COD_MN": 0.5195,
+      "NH3_N": 0.4083,
+      "TP": 0.4391,
+      "TN": 0.4357,
+      "EC": 0.3539,
+      "TURB": 0.7516
+    }
+  },
+  "horizon_1": {
+    "MAE": 0.19258817350734672,
+    "MSE": 0.1028463585230104,
+    "RMSE": 0.3206966768194058,
+    "MAPE": 6.647161191496116,
+    "persistence": {
+      "MAE": 0.17664687570406007,
+      "RMSE": 0.3337395621196838,
+      "MAPE": 6.410589502773194
+    },
+    "per_channel_rmse": {
+      "WT": 0.0477,
+      "pH": 0.1368,
+      "DO": 0.1754,
+      "COD_MN": 0.3706,
+      "NH3_N": 0.4025,
+      "TP": 0.2957,
+      "TN": 0.3454,
+      "EC": 0.1538,
+      "TURB": 0.5866
+    }
+  },
+  "paper_ref_rmse": 0.2649,
+  "paper_ref_mape_pct": 7.67,
+  "best_epoch": 13,
+  "best_val_rmse": 0.422550383377759,
+  "n_params": 1856074,
+  "cfg": {
+    "T_in": 168,
+    "T_out": 12,
+    "N": 16,
+    "C": 9,
+    "D": 4,
+    "F": 128,
+    "d_E": 64,
+    "mlp_hidden": 128,
+    "L_tcn": 6,
+    "K_tcn": 3,
+    "L_g": 4,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "huber_delta": 1.0,
+    "epochs": 60,
+    "patience": 15,
+    "zongguan_idx": 15,
+    "num_workers": 4,
+    "use_amp": true,
+    "use_cosine": true,
+    "seed": 42,
+    "zongguan_loss_weight": 4.0,
+    "residual": true,
+    "use_cross_attn": true,
+    "use_future_meteo": false,
+    "use_patchtst_water": false,
+    "n_heads": 4,
+    "n_dec_layers": 2,
+    "patch_len": 8,
+    "patch_layers": 2,
+    "patch_dropout": 0.15,
+    "channel_loss_weight": null,
+    "exp": "p0"
+  }
+}

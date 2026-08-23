@@ -1,0 +1,26 @@
+{
+  "exp": "v3",
+  "protocol": "horizon-1",
+  "station": "宗关",
+  "horizon_1": {
+    "MAE": 0.17278670733622495,
+    "MSE": 0.0954763431906308,
+    "RMSE": 0.3089924646178783,
+    "MAPE": 6.064972058553677,
+    "per_channel_rmse": {
+      "WT": 0.0378,
+      "pH": 0.1258,
+      "DO": 0.155,
+      "COD_MN": 0.3646,
+      "NH3_N": 0.4091,
+      "TP": 0.255,
+      "TN": 0.361,
+      "EC": 0.1259,
+      "TURB": 0.5537
+    }
+  },
+  "best_epoch": 3,
+  "best_val_rmse": 0.4366716823970676,
+  "n_params": 1510573,
+  "source": "outputs/model_runs_tf/eval_v3/test_metrics.json"
+}

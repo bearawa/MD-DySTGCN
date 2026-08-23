@@ -1,0 +1,4 @@
+# Training (install a CUDA build of torch that matches your GPU)
+torch>=2.0
+numpy>=1.19.0
+matplotlib>=3.3.0

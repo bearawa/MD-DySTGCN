@@ -1,0 +1,89 @@
+{
+  "exp": "eval_v3",
+  "horizon_12": {
+    "MAE": 0.26778202093895664,
+    "MSE": 0.19434791905441676,
+    "RMSE": 0.44084908875307516,
+    "MAPE": 8.172361131360171,
+    "persistence": {
+      "MAE": 0.2756122902110206,
+      "RMSE": 0.467825115843832,
+      "MAPE": 8.832144892609069
+    },
+    "per_channel_rmse": {
+      "WT": 0.0791,
+      "pH": 0.2296,
+      "DO": 0.3231,
+      "COD_MN": 0.517,
+      "NH3_N": 0.4106,
+      "TP": 0.4297,
+      "TN": 0.4339,
+      "EC": 0.4087,
+      "TURB": 0.781
+    }
+  },
+  "horizon_1": {
+    "MAE": 0.17278670733622495,
+    "MSE": 0.0954763431906308,
+    "RMSE": 0.3089924646178783,
+    "MAPE": 6.064972058553677,
+    "persistence": {
+      "MAE": 0.17664687570406007,
+      "RMSE": 0.3337395621196838,
+      "MAPE": 6.410589502773194
+    },
+    "per_channel_rmse": {
+      "WT": 0.0378,
+      "pH": 0.1258,
+      "DO": 0.155,
+      "COD_MN": 0.3646,
+      "NH3_N": 0.4091,
+      "TP": 0.255,
+      "TN": 0.361,
+      "EC": 0.1259,
+      "TURB": 0.5537
+    }
+  },
+  "paper_ref_rmse": 0.2649,
+  "paper_ref_mape_pct": 7.67,
+  "best_epoch": 3,
+  "best_val_rmse": 0.4366716823970676,
+  "n_params": 1510573,
+  "cfg": {
+    "T_in": 168,
+    "T_out": 12,
+    "N": 16,
+    "C": 9,
+    "D": 4,
+    "F": 128,
+    "d_E": 64,
+    "mlp_hidden": 128,
+    "L_tcn": 6,
+    "K_tcn": 3,
+    "L_g": 4,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "huber_delta": 1.0,
+    "epochs": 60,
+    "patience": 15,
+    "zongguan_idx": 15,
+    "num_workers": 4,
+    "use_amp": true,
+    "use_cosine": true,
+    "seed": 42,
+    "zongguan_loss_weight": 4.0,
+    "residual": true,
+    "use_cross_attn": false,
+    "use_future_meteo": false,
+    "use_patchtst_water": false,
+    "n_heads": 4,
+    "n_dec_layers": 2,
+    "patch_len": 8,
+    "patch_layers": 2,
+    "patch_dropout": 0.15,
+    "channel_loss_weight": null,
+    "exp": "eval_v3"
+  }
+}

@@ -1,0 +1,39 @@
+# --- secrets / local ---
+.env
+kaggle.json
+.kaggle/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- large windowed arrays (GitHub 100MB file limit; rebuild via preprocess) ---
+outputs/arrays/*.npz
+outputs/arrays/train.npz
+outputs/arrays/val.npz
+outputs/arrays/test.npz
+
+# empty / local
+fonts/
+
+# optional heavy / obsolete experiment dumps
+W4/results/*.pt
+W4/results/*.npy
+outputs/tcn_optuna_kaggle/
+kaggle_kernels/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# --- delivery archives / studio scratch ---
+*.zip
+figure-studio-runs/
+
+# e50 retrains: keep histories in 论文插图包/data/runs; skip bulky checkpoints
+outputs/model_runs_tf/*_e50/

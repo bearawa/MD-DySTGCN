@@ -1,0 +1,50 @@
+{
+  "stations": [
+    "烈金坝",
+    "梁西渡",
+    "小钢桥",
+    "老君关",
+    "羊尾",
+    "陈家坡",
+    "沈湾",
+    "白家湾",
+    "余家湖",
+    "转斗",
+    "皇庄",
+    "罗汉闸",
+    "岳口",
+    "汉南村",
+    "小河",
+    "宗关"
+  ],
+  "water_features": [
+    "WT",
+    "pH",
+    "DO",
+    "COD_MN",
+    "NH3_N",
+    "TP",
+    "TN",
+    "EC",
+    "TURB"
+  ],
+  "meteo_features": [
+    "precipitation",
+    "surface_runoff",
+    "air_temp_2m",
+    "wind_speed_10m"
+  ],
+  "T_in": 168,
+  "T_out": 12,
+  "split_sizes_time": [
+    6770,
+    967,
+    1935
+  ],
+  "sample_counts": {
+    "train": 6591,
+    "val": 788,
+    "test": 1756
+  },
+  "has_M_future": true
+}
